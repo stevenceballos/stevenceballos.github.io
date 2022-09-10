@@ -1,0 +1,341 @@
+<!--
+File: index.html
+HW 1 GUI Assignment: Creating Your First Web Page
+Steven Ceballos, UMass Lowell Computer Science, steven_ceballos@student.uml.edu
+September 7, 2022 at 5:16 PM
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <!-- This is the head of the webpage. It includes the title,
+     the charset declaration, and the link to the .css file-->
+    <head>
+        <meta charset="utf-8">
+        <title>Minnesota Vikings</title>
+        <style type="text/css">
+            H1.center { text-align: center;}
+            H2.left { text-align: left;}
+            H3.right {text-align: right;}
+        </style>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <!-- This is the beginning of the body. Here we have a header 
+        at the top of the page, along with an image. The image also has horizontal lines represented by <hr> -->
+        <hr>
+        <h1 class="center">The Minnesota Vikings</h1>
+        <img src="images/banner.jpg"
+             alt="Banner"
+             title="Banner of the Vikings"
+             width="1500"
+             height="150"
+             class="center"
+        />
+        <hr>
+        <!-- Here are the hyperlinks, at the top of the page. Set up using the classes row and column to have them side by side-->
+        <div class="row">
+            <div class="column2">
+                <a href="https://www.vikings.com/schedule/">2022 Schedule</a> 
+            </div>
+            <div class="column2">
+                <a href="https://shop.vikings.com/en/?_s=bm-minVikings-header-topnav-shop-2022">Shop Vikings Gear</a> 
+            </div>
+            <div class="column2">
+                <a href="https://www.ticketmaster.com/minnesota-vikings-tickets/artist/805973?brand=vikings&wt.mc_id=NFL_TEAM_MIN_UNV_NAV_LINK_DRP_DOWN&utm_source=NFL.com&utm_medium=client&utm_campaign=NFL_TEAM_MIN&utm_content=UNV_NAV_LINK_DROP_DOWN">Vikings Tickets</a> 
+            </div>
+            <div class="column2">
+                <a href="https://www.nfl.com/">NFL.com</a> 
+            </div>
+            <div class="column2">
+                <a href="https://www.youtube.com/c/vikings">Youtube</a> 
+            </div>
+        </div>       
+        <!-- Beginning of the paragraph "About Us"-->     
+        <h2 class="left">About Us</h2>
+        <div>
+        <!--Image is declared below-->    
+        <div style="float: right">    
+           <img src="images/about.jpg"
+                alt="about"
+                width="300"
+                height="300"
+                class="right"
+           >
+        </div>   
+        <div>  
+           <!-- Text is below, uses breaks and bold formatting-->  
+           <p>
+           The <b>Minnesota Vikings</b> are a professional American football team based in Minneapolis, Minnesota.<br> 
+           They are a member of the NFC (National Football Conference) North division. Since 1961, the Vikings<br> 
+           have won 4 conference championships and 20 divisional championships. Although they have not<br> 
+           won a Super Bowl, the Vikings continue to strive towards that as the ultimate acheivement in the NFL.<br>
+           The Vikings have an all-time overall record of 524-451-11, which is the best winning percentage of teams <br>
+           who have not won a Super Bowl. The Vikings are owned by American Billionaire <b>Zygmunt Wilf</b> and have <br>
+           been since 2005. Kevin O'Connell is our new head coach who will be starting his Vikings career in the 2022 season.
+           </p>
+        </div>
+        </div>
+        <hr>
+        <!-- Beginning of the Notable Vikings section. Uses classes for aligning the images and text--> 
+        <h1 class="center">Notable Vikings</h1>
+        <h2 class="left">Adrian Peterson</h2>
+        <div>
+        <div style="float: left">    
+           <img src="images/peterson.jpg"
+                alt="peterson"
+                width="300"
+                height="300"
+                class="left"
+           >
+        </div>   
+        <div>   
+           <p>
+           <b>Adrian Peterson</b> was a running back for the Vikings from 2007 to 2016. <br>
+           Peterson is considered to be one of the greatest running backs in football history.<br>
+           <!-- Below is the first unordered list. The ul belongs to the center class which gives it a border that is centered.-->
+           <ul class="center">
+            <li>
+                2012 NFL MVP
+            </li>
+            <li>
+                Named one of the 50 Greatest Vikings
+            </li>
+            <li>
+                4x first team All-Pro
+            </li>
+            <li>
+                2012 NFL Offensive Player of the Year
+            </li>
+            <li>
+                2007 NFL Offensive Rookie of the Year
+            </li>
+            <li>
+                3x NFL rushing yards leader
+            </li>
+            <li>
+                2x NFL rushing touchdowns leader
+            </li>
+           </ul>
+           </p>
+        </div>
+        </div>
+        <!-- Replica of the previous section, an unordered list with an image and text-->
+        <h2 class="left">Fran Tarkenton</h2>
+        <div>
+        <div style="float: left">    
+            <img src="images/tarkenton.jpg"
+                 alt="tarkenton"
+                 width="300"
+                 height="250"
+                 class="left"
+            >
+        </div>
+        <div>
+            <p>
+            <b>Fran Tarkenton</b> was a quarterback for the Vikings from 1961 to 1966, and again from 1972 to 1978. 
+            <!--Unordered list starts here-->
+            <ul class="center">
+             <li>
+                1975 NFL MVP 
+             </li>
+             <li>
+                1x first team All-Pro
+             </li>
+             <li>
+                Named one of the 50 Greatest Vikings
+             </li>
+             <li>
+                1978 NFL passing yards leader
+             </li>
+             <li>
+                1975 NFL passing touchdowns leader
+             </li>
+             <li>
+                1975 NFL Offensive Player of the Year
+             </li>
+             <li>
+                Inducted into the Football Hall of Fame in 1986
+             </li>   
+            </ul>
+            </p>
+        </div>
+        </div>
+        <hr>
+        <!-- Beginning of the tables, one for offense, defense and special teams. 
+        Each is given a border, some padding, and uses h1 for the gold text-->
+        <div class="row">
+          <div class="column">
+            <!--First table-->
+            <h1>2022 Starting Offense</h1>
+            <table>
+             <tr>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Number</th>
+             </tr>
+             <tr>
+                <td>Kirk Cousins</td>
+                <td>QB</td>
+                <td>8</td>
+             </tr>
+             <tr>
+                <td>Dalvin Cook</td>
+                <td>RB</td>
+                <td>4</td>
+             </tr>
+             <tr>
+                <td>C.J. Ham</td>
+                <td>FB</td>
+                <td>30</td>
+             </tr>
+             <tr>
+                <td>Justin Jefferson</td>
+                <td>WR</td>
+                <td>18</td>
+             </tr>
+             <tr>
+                <td>Adam Thielen</td>
+                <td>WR</td>
+                <td>19</td>
+             </tr>
+             <tr>
+                <td>Irv Smith Jr.</td>
+                <td>TE</td>
+                <td>84</td>
+             </tr>
+             <tr>
+                <td>Christian Darrisaw</td>
+                <td>LT</td>
+                <td>71</td>
+             </tr>
+             <tr>
+                <td>Ezra Cleveland</td>
+                <td>LG</td>
+                <td>72</td>
+             </tr>
+             <tr>
+                <td>Garrett Bradbury</td>
+                <td>C</td>
+                <td>56</td>
+             </tr>
+             <tr>
+                <td>Ed Ingram</td>
+                <td>RG</td>
+                <td>67</td>
+             </tr>
+             <tr>
+                <td>Brian O'Neill</td>
+                <td>RT</td>
+                <td>75</td>
+             </tr>
+             </table>
+          </div>
+          <!--Second table-->
+          <div class="column">
+            <h1>2022 Starting Defense</h1>
+            <table>
+             <tr>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Number</th>
+             </tr>
+             <tr>
+                <td>Danielle Hunter</td>
+                <td>OLB</td>
+                <td>99</td>
+             </tr>
+             <tr>
+                <td>Jonathan Bullard</td>
+                <td>DE</td>
+                <td>93</td>
+             </tr>
+             <tr>
+                <td>Harrison Phillips</td>
+                <td>NT</td>
+                <td>97</td>
+             </tr>
+             <tr>
+                <td>Dalvin Tomlinson</td>
+                <td>DE</td>
+                <td>94</td>
+             </tr>
+             <tr>
+                <td>Za'Darius Smith</td>
+                <td>OLB</td>
+                <td>55</td>
+             </tr>
+             <tr>
+                <td>Jordan Hicks</td>
+                <td>WLB</td>
+                <td>58</td>
+             </tr>
+             <tr>
+                <td>Eric Kendricks</td>
+                <td>MLB</td>
+                <td>54</td>
+             </tr>
+             <tr>
+                <td>Cameron Dantzler Sr.</td>
+                <td>CB</td>
+                <td>3</td>
+             </tr>
+             <tr>
+                <td>Patrick Peterson</td>
+                <td>CB</td>
+                <td>7</td>
+             </tr>
+             <tr>
+                <td>Harrison Smith</td>
+                <td>S</td>
+                <td>22</td>
+             </tr>
+             <tr>
+                <td>Camryn Bynum</td>
+                <td>S</td>
+                <td>24</td>
+             </tr>
+             </table>
+          </div>
+          <!--Third table-->
+          <div class="column">
+            <h1>2022 Special Teams</h1>
+            <table>
+             <tr>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Number</th>
+             </tr>
+             <tr>
+                <td>Greg Joseph</td>
+                <td>K</td>
+                <td>1</td>
+             </tr>
+             <tr>
+                <td>Ryan Wright</td>
+                <td>P</td>
+                <td>14</td>
+             </tr>
+             <tr>
+                <td>Ryan Wright</td>
+                <td>H</td>
+                <td>14</td>
+             </tr>
+             <tr>
+                <td>Andrew DePaola</td>
+                <td>LS</td>
+                <td>42</td>
+             </tr>
+             <tr>
+                <td>Kene Nwangwu</td>
+                <td>KR</td>
+                <td>26</td>
+             </tr>
+             <tr>
+                <td>Jalen Reagor</td>
+                <td>PR</td>
+                <td>5</td>
+             </tr>
+             </table>
+          </div>     
+        </div>
+    </body>
+</html>

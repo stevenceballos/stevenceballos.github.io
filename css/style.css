@@ -1,0 +1,90 @@
+/*This is where I set up the background color for the page*/
+body {
+    background-color: rgb(121, 79, 147);
+}
+/*This is for the headers. I used headers in 2 different ways to fit different themes. Each has a different color and
+ size to fit those themes*/
+h1 {
+    color: rgb(248, 196, 8);
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    outline: 20px black;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+
+}
+
+h2 {
+    color: white;
+    font-size: 35px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}
+/*The following affects only the hyperlinks used on the website. The usual blue color felt to generic, so I used brown. 
+The Brown blended in with the purple a bit so I added a border on the links.*/
+a {
+    font-size: 20px;
+    color: brown;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+/*Specifications for paragraph text.*/
+p {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 26px;
+}
+/*Specifications for unordered list text.*/
+ul {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 26px;
+    border: 4px dashed black;
+}
+/*Specifications for table entry text.*/
+tr {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+}
+/*Used to put a border around the table*/
+table{
+    border: 4px dashed black;
+}
+/*The following classes are used to help with aligning certain elements. One for right, left, and center each*/
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.right {
+    display: block;
+    margin-left: auto;
+}
+
+.left {
+    display: block;
+    margin-right: auto;
+}
+/*Used for setting up columns and rows for having text/tables be side by side*/
+.column {
+    float: left;
+    width: 30%;
+    padding: 20px;
+}
+
+.column2 {
+    float: left;
+    width: 15%;
+    padding-left: 65px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/*Used for indentation*/
+a.indent {
+    padding-right: 20em
+}
